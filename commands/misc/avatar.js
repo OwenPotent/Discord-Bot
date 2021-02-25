@@ -15,7 +15,7 @@ module.exports = {
         if (!member.user.avatarURL) return message.channel.send(`That user does not have an avatar`);
 
         const avatar = new Discord.MessageEmbed()
-            .setTitle(`${member.user.username}'s Avatar`)
+            .setTitle(`Here\'s ${member.user.username}'s Avatar`)
             .setColor("#555B6E")
             .setImage(member.user.avatarURL())
             .setURL(member.user.avatarURL())
@@ -26,14 +26,3 @@ module.exports = {
     }
 
 };
-
-// #555B6E
-// #84758B
-// #B5909F
-// #E1B0AC
-// #FFD6BA
-// #CDCEC1
-// #98A396
-// #647A71
-// #355251
-// #082C34
